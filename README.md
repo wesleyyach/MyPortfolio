@@ -6,8 +6,7 @@ Portfólio profissional desenvolvido para apresentar minha identidade, meus serv
 
 ## 🔗 Demo
 
-- **Projeto online:** [adicione aqui o link da Vercel]
-- **Repositório:** [adicione aqui o link do GitHub]
+- **Projeto online:** [https://my-portfolio-green-three-25.vercel.app/]
 
 ## 📌 Sobre o projeto
 
@@ -55,9 +54,32 @@ O layout foi desenvolvido com foco em responsividade, buscando boa adaptação p
 - Código organizado e de fácil manutenção
 - Experiência responsiva em diferentes tamanhos de tela
 
+
+## 🧠 Aprendizados
+
+Durante o desenvolvimento deste projeto, foi possível praticar e aprimorar conhecimentos em:
+
+- Estruturação semântica com HTML
+- Estilização moderna com CSS
+- Interatividade com JavaScript
+- Construção de interfaces responsivas
+- Organização visual para apresentação profissional
+- Criação de páginas com foco em posicionamento e credibilidade
+
+
+## 🔮 Melhorias futuras
+Algumas melhorias que podem ser adicionadas futuramente:
+
+- Integração real do formulário com e-mail ou WhatsApp
+- Inclusão de projetos reais com links externos
+- Otimização de SEO
+- Animações mais avançadas
+- Versão multilíngue
+- Deploy com domínio personalizado
+
 ## 📁 Estrutura do projeto
 
-```bash
+```
 portfolio/
 ├── css/
 │   └── style.css
@@ -68,29 +90,7 @@ portfolio/
 ├── index.html
 ├── preview.png
 └── README.md
-
-🧠 Aprendizados
-
-Durante o desenvolvimento deste projeto, foi possível praticar e aprimorar conhecimentos em:
-
-Estruturação semântica com HTML
-Estilização moderna com CSS
-Interatividade com JavaScript
-Construção de interfaces responsivas
-Organização visual para apresentação profissional
-Criação de páginas com foco em posicionamento e credibilidade
-
-
-🔮 Melhorias futuras
-Algumas melhorias que podem ser adicionadas futuramente:
-
-Integração real do formulário com e-mail ou WhatsApp
-Inclusão de projetos reais com links externos
-Otimização de SEO
-Animações mais avançadas
-Versão multilíngue
-Deploy com domínio personalizado
-
+```
 
 👨‍💻 Autor
 Desenvolvido por Wesley de Albuquerque
