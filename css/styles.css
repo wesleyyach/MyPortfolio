@@ -999,3 +999,57 @@ textarea:focus {
     min-height: auto;
   }
 }
+
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  gap: 0.2rem;
+}
+
+.language-btn {
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: 10px;
+  padding: 0.55rem 0.72rem;
+  min-width: 46px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: background var(--transition), color var(--transition), transform var(--transition);
+}
+
+.language-btn.is-active {
+  background: linear-gradient(135deg, var(--primary-strong), var(--secondary));
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(34, 211, 238, 0.18);
+}
+
+.header-actions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.form-note {
+  min-height: 1.4em;
+}
+
+@media (max-width: 820px) {
+  .header-actions {
+    gap: 0.55rem;
+  }
+
+  .language-switch {
+    order: -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .language-btn {
+    min-width: 42px;
+    padding: 0.5rem 0.6rem;
+  }
+}

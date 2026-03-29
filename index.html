@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
+      id="metaDescription"
       name="description"
       content="Portfólio de Wesley de Albuquerque"
     />
     <link rel="icon" href="./img/iconeW.png?v=2" type="image/png">
     <meta
+      id="metaKeywords"
       name="keywords"
       content="Wesley de Albuquerque, portfólio, desenvolvedor web, front-end, HTML, CSS, JavaScript"
     />
@@ -22,24 +24,28 @@
 
     <header class="header" id="header">
       <div class="container header-inner">
-        <a href="#home" class="logo" aria-label="Voltar ao início">
+        <a href="#home" class="logo" aria-label="Voltar ao início" data-i18n-aria="logoAria">
           <span>W</span>
         </a>
 
-        <nav class="nav" id="navMenu" aria-label="Navegação principal">
-          <a href="#home" class="nav-link active">Início</a>
-          <a href="#sobre" class="nav-link">Sobre</a>
-          <a href="#servicos" class="nav-link">Serviços</a>
-          <a href="#projetos" class="nav-link">Projetos</a>
-          <a href="#skills" class="nav-link">Habilidades</a>
-          <a href="#contato" class="nav-link">Contato</a>
+        <nav class="nav" id="navMenu" aria-label="Navegação principal" data-i18n-aria="navAria">
+          <a href="#home" class="nav-link active" data-i18n="navHome">Início</a>
+          <a href="#sobre" class="nav-link" data-i18n="navAbout">Sobre</a>
+          <a href="#servicos" class="nav-link" data-i18n="navServices">Serviços</a>
+          <a href="#projetos" class="nav-link" data-i18n="navProjects">Projetos</a>
+          <a href="#skills" class="nav-link" data-i18n="navSkills">Habilidades</a>
+          <a href="#contato" class="nav-link" data-i18n="navContact">Contato</a>
         </nav>
 
         <div class="header-actions">
-          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema">
+          <div class="language-switch" id="languageSwitch" role="group" aria-label="Selecionar idioma" data-i18n-aria="languageSwitchAria">
+            <button class="language-btn is-active" type="button" data-lang="pt-BR">PT</button>
+            <button class="language-btn" type="button" data-lang="en">EN</button>
+          </div>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema" data-i18n-aria="themeAria">
             Tema
           </button>
-          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" data-i18n-aria="menuAria" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -53,35 +59,35 @@
         <div class="container hero-grid">
           <div class="hero-content reveal">
             <div class="hero-badges">
-              <span class="badge">Portfólio</span>
-              <span class="badge badge-muted">Disponível para novos projetos</span>
+              <span class="badge" data-i18n="heroBadgePortfolio">Portfólio</span>
+              <span class="badge badge-muted" data-i18n="heroBadgeAvailability">Disponível para novos projetos</span>
             </div>
 
-            <p class="eyebrow">Desenvolvedor Web</p>
+            <p class="eyebrow" data-i18n="heroEyebrow">Desenvolvedor Web</p>
             <h1>Wesley de Albuquerque</h1>
-            <p class="hero-text">
+            <p class="hero-text" data-i18n="heroText">
               Crio experiências digitais elegantes, responsivas e orientadas a resultado.
               Este site foi desenhado para transmitir autoridade, organização e presença
               profissional no ambiente online.
             </p>
 
             <div class="hero-actions">
-              <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-              <a href="#contato" class="btn btn-secondary">Entrar em contato</a>
+              <a href="#projetos" class="btn btn-primary" data-i18n="heroBtnProjects">Ver projetos</a>
+              <a href="#contato" class="btn btn-secondary" data-i18n="heroBtnContact">Entrar em contato</a>
             </div>
 
             <div class="hero-stats">
               <article class="stat-card">
-                <strong>Design estratégico</strong>
-                <span>Visual sólido com foco em clareza e conversão.</span>
+                <strong data-i18n="heroStat1Title">Design estratégico</strong>
+                <span data-i18n="heroStat1Text">Visual sólido com foco em clareza e conversão.</span>
               </article>
               <article class="stat-card">
-                <strong>Experiência responsiva</strong>
-                <span>Layout ajustado para desktop, tablet e celular.</span>
+                <strong data-i18n="heroStat2Title">Experiência responsiva</strong>
+                <span data-i18n="heroStat2Text">Layout ajustado para desktop, tablet e celular.</span>
               </article>
               <article class="stat-card">
-                <strong>Código organizado</strong>
-                <span>Estrutura limpa, escalável e fácil de manter.</span>
+                <strong data-i18n="heroStat3Title">Código organizado</strong>
+                <span data-i18n="heroStat3Text">Estrutura limpa, escalável e fácil de manter.</span>
               </article>
             </div>
           </div>
@@ -89,12 +95,12 @@
           <div class="hero-panel reveal">
             <div class="profile-card">
               <div class="profile-top">
-                <span class="profile-tag">Apresentação premium</span>
+                <span class="profile-tag" data-i18n="profileTag">Apresentação premium</span>
                 <div class="profile-avatar">WA</div>
               </div>
 
-              <h2>Presença digital com sofisticação e confiança</h2>
-              <p>
+              <h2 data-i18n="profileTitle">Presença digital com sofisticação e confiança</h2>
+              <p data-i18n="profileText">
                 Desenvolvo interfaces modernas, organizadas e profissionais,
                 pensadas para destacar projetos, fortalecer presença digital e transmitir
                 credibilidade desde o primeiro acesso.
@@ -102,35 +108,35 @@
 
               <div class="profile-lines">
                 <div class="line-item">
-                  <span>Especialidade</span>
-                  <strong>Sites modernos e landing pages</strong>
+                  <span data-i18n="profileLine1Label">Especialidade</span>
+                  <strong data-i18n="profileLine1Value">Sites modernos e landing pages</strong>
                 </div>
                 <div class="line-item">
-                  <span>Foco</span>
-                  <strong>Performance, interface e credibilidade</strong>
+                  <span data-i18n="profileLine2Label">Foco</span>
+                  <strong data-i18n="profileLine2Value">Performance, interface e credibilidade</strong>
                 </div>
                 <div class="line-item">
-                  <span>Base técnica</span>
-                  <strong>HTML, CSS e JavaScript</strong>
+                  <span data-i18n="profileLine3Label">Base técnica</span>
+                  <strong data-i18n="profileLine3Value">HTML, CSS e JavaScript</strong>
                 </div>
               </div>
 
               <div class="mini-grid">
                 <article>
                   <span>01</span>
-                  <strong>Visual refinado</strong>
+                  <strong data-i18n="miniGrid1">Visual refinado</strong>
                 </article>
                 <article>
                   <span>02</span>
-                  <strong>Navegação intuitiva</strong>
+                  <strong data-i18n="miniGrid2">Navegação intuitiva</strong>
                 </article>
                 <article>
                   <span>03</span>
-                  <strong>Alto padrão visual</strong>
+                  <strong data-i18n="miniGrid3">Alto padrão visual</strong>
                 </article>
                 <article>
                   <span>04</span>
-                  <strong>Leitura objetiva</strong>
+                  <strong data-i18n="miniGrid4">Leitura objetiva</strong>
                 </article>
               </div>
             </div>
@@ -141,9 +147,9 @@
       <section class="section" id="sobre">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">Sobre mim</p>
-            <h2>Uma presença profissional, clara e marcante</h2>
-            <p>
+            <p class="eyebrow" data-i18n="aboutEyebrow">Sobre mim</p>
+            <h2 data-i18n="aboutTitle">Uma presença profissional, clara e marcante</h2>
+            <p data-i18n="aboutLead">
               Este espaço foi criado para apresentar minha trajetória,
               destacar minhas competências e transmitir, com objetividade, a forma como transformo ideias em soluções bem construídas.
             </p>
@@ -151,45 +157,45 @@
 
           <div class="about-grid">
             <div class="about-copy reveal">
-              <p>
+              <p data-i18n="aboutP1">
                 Sou Wesley de Albuquerque, um profissional focado em construir soluções digitais
                 modernas, elegantes e funcionais. Um bom portfólio não serve apenas para exibir
                 projetos. Ele também comunica visão, cuidado estético, organização e confiança.
               </p>
-              <p>
+              <p data-i18n="aboutP2">
                 Com uma abordagem voltada para qualidade visual e experiência do usuário, este
                 site foi desenhado para posicionar meu trabalho, seja para
                 clientes, recrutadores ou parceiros.
               </p>
 
               <ul class="check-list">
-                <li>Layout premium com aparência corporativa</li>
-                <li>Estrutura ideal para apresentar serviços e projetos</li>
-                <li>Design responsivo com leitura confortável em qualquer tela</li>
-                <li>Elementos visuais que reforçam valor e credibilidade</li>
+                <li data-i18n="aboutList1">Layout premium com aparência corporativa</li>
+                <li data-i18n="aboutList2">Estrutura ideal para apresentar serviços e projetos</li>
+                <li data-i18n="aboutList3">Design responsivo com leitura confortável em qualquer tela</li>
+                <li data-i18n="aboutList4">Elementos visuais que reforçam valor e credibilidade</li>
               </ul>
             </div>
 
             <div class="about-cards">
               <article class="info-card reveal">
                 <span class="card-index">01</span>
-                <h3>Interface refinada</h3>
-                <p>Componentes bem espaçados, tipografia forte e visual premium.</p>
+                <h3 data-i18n="aboutCard1Title">Interface refinada</h3>
+                <p data-i18n="aboutCard1Text">Componentes bem espaçados, tipografia forte e visual premium.</p>
               </article>
               <article class="info-card reveal">
                 <span class="card-index">02</span>
-                <h3>Experiência fluida</h3>
-                <p>Navegação simples, seções objetivas e transições suaves.</p>
+                <h3 data-i18n="aboutCard2Title">Experiência fluida</h3>
+                <p data-i18n="aboutCard2Text">Navegação simples, seções objetivas e transições suaves.</p>
               </article>
               <article class="info-card reveal">
                 <span class="card-index">03</span>
-                <h3>Estrutura estratégica</h3>
-                <p>Conteúdo organizado para valorizar sua proposta profissional.</p>
+                <h3 data-i18n="aboutCard3Title">Estrutura estratégica</h3>
+                <p data-i18n="aboutCard3Text">Conteúdo organizado para valorizar sua proposta profissional.</p>
               </article>
               <article class="info-card reveal">
                 <span class="card-index">04</span>
-                <h3>Pronto para personalizar</h3>
-                <p>Você pode trocar textos, links, projetos e contatos com facilidade.</p>
+                <h3 data-i18n="aboutCard4Title">Pronto para personalizar</h3>
+                <p data-i18n="aboutCard4Text">Você pode trocar textos, links, projetos e contatos com facilidade.</p>
               </article>
             </div>
           </div>
@@ -199,92 +205,92 @@
       <section class="section section-muted" id="servicos">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">Serviços</p>
-            <h2>Área de destaques dos serviços</h2>
+            <p class="eyebrow" data-i18n="servicesEyebrow">Serviços</p>
+            <h2 data-i18n="servicesTitle">Área de destaques dos serviços</h2>
           </div>
 
           <div class="cards-grid service-grid">
             <article class="service-card reveal">
               <span class="service-label">01</span>
-              <h3>Landing Pages</h3>
-              <p>
+              <h3 data-i18n="service1Title">Landing Pages</h3>
+              <p data-i18n="service1Text">
                 Páginas pensadas para apresentar ofertas, gerar contatos e valorizar a identidade
                 da sua marca com alto impacto visual.
               </p>
               <ul>
-                <li>Estrutura focada em conversão</li>
-                <li>Design responsivo</li>
-                <li>Experiência rápida e objetiva</li>
+                <li data-i18n="service1Item1">Estrutura focada em conversão</li>
+                <li data-i18n="service1Item2">Design responsivo</li>
+                <li data-i18n="service1Item3">Experiência rápida e objetiva</li>
               </ul>
             </article>
 
             <article class="service-card reveal">
               <span class="service-label">02</span>
-              <h3>Sites Institucionais</h3>
-              <p>
+              <h3 data-i18n="service2Title">Sites Institucionais</h3>
+              <p data-i18n="service2Text">
                 Soluções para empresas, profissionais e marcas que precisam de presença digital
                 forte, organizada e confiável.
               </p>
               <ul>
-                <li>Apresentação de serviços</li>
-                <li>Fortalecimento de autoridade</li>
-                <li>Visual alinhado com posicionamento</li>
+                <li data-i18n="service2Item1">Apresentação de serviços</li>
+                <li data-i18n="service2Item2">Fortalecimento de autoridade</li>
+                <li data-i18n="service2Item3">Visual alinhado com posicionamento</li>
               </ul>
             </article>
 
             <article class="service-card reveal">
               <span class="service-label">03</span>
-              <h3>Blog</h3>
-              <p>
+              <h3 data-i18n="service3Title">Blog</h3>
+              <p data-i18n="service3Text">
                 Estruturas ideais para publicar conteúdos, fortalecer sua marca e melhorar a presença
                 digital com estratégia e consistência.
               </p>
               <ul>
-                <li>Publicação de artigos e notícias</li>
-                <li>Melhoria de visibilidade no Google</li>
-                <li>Organização de conteúdo por categorias</li>
+                <li data-i18n="service3Item1">Publicação de artigos e notícias</li>
+                <li data-i18n="service3Item2">Melhoria de visibilidade no Google</li>
+                <li data-i18n="service3Item3">Organização de conteúdo por categorias</li>
               </ul>
             </article>
             
             <article class="service-card reveal">
               <span class="service-label">04</span>
-              <h3>Loja Virtual</h3>
-              <p>
+              <h3 data-i18n="service4Title">Loja Virtual</h3>
+              <p data-i18n="service4Text">
                 Soluções para vender produtos online com praticidade, segurança e uma experiência de
                 compra simples para o cliente.
               </p>
               <ul>
-                <li>Catálogo de produtos</li>
-                <li>Integração com pagamentos</li>
-                <li>Layout pensado para conversão</li>
+                <li data-i18n="service4Item1">Catálogo de produtos</li>
+                <li data-i18n="service4Item2">Integração com pagamentos</li>
+                <li data-i18n="service4Item3">Layout pensado para conversão</li>
               </ul>
             </article>
             
             <article class="service-card reveal">
               <span class="service-label">05</span>
-              <h3>Manutenção de Site</h3>
-              <p>
+              <h3 data-i18n="service5Title">Manutenção de Site</h3>
+              <p data-i18n="service5Text">
                 Serviço voltado para manter seu site atualizado, seguro e funcionando bem no dia a dia,
                 evitando falhas e melhorando desempenho.
               </p>
               <ul>
-                <li>Correção de erros e bugs</li>
-                <li>Atualizações e ajustes visuais</li>
-                <li>Otimização de desempenho e segurança</li>
+                <li data-i18n="service5Item1">Correção de erros e bugs</li>
+                <li data-i18n="service5Item2">Atualizações e ajustes visuais</li>
+                <li data-i18n="service5Item3">Otimização de desempenho e segurança</li>
               </ul>
             </article>
 
             <article class="service-card reveal">
               <span class="service-label">06</span>
-              <h3>Interfaces Front-end</h3>
-              <p>
+              <h3 data-i18n="service6Title">Interfaces Front-end</h3>
+              <p data-i18n="service6Text">
                 Construção de interfaces limpas, modernas e eficientes, priorizando usabilidade,
                 consistência visual e organização do código.
               </p>
               <ul>
-                <li>HTML semântico</li>
-                <li>CSS moderno</li>
-                <li>Interatividade com JavaScript</li>
+                <li data-i18n="service6Item1">HTML semântico</li>
+                <li data-i18n="service6Item2">CSS moderno</li>
+                <li data-i18n="service6Item3">Interatividade com JavaScript</li>
               </ul>
             </article>
           </div>
@@ -294,9 +300,9 @@
       <section class="section" id="projetos">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">Projetos em destaque</p>
-            <h2>Projetos reais e Projetos para portifólio</h2>
-            <p>
+            <p class="eyebrow" data-i18n="projectsEyebrow">Projetos em destaque</p>
+            <h2 data-i18n="projectsTitle">Projetos reais e Projetos para portifólio</h2>
+            <p data-i18n="projectsLead">
               Uma seleção de trabalhos desenvolvidos com foco em estética, clareza,
               responsividade e presença digital profissional.
             </p>
@@ -309,9 +315,9 @@
               </a>
       
               <div class="project-content">
-                <span class="project-tag">Landing Page</span>
-                <h3>Studio Beauty</h3>
-                <p>
+                <span class="project-tag" data-i18n="project1Tag">Landing Page</span>
+                <h3 data-i18n="project1Title">Studio Beauty</h3>
+                <p data-i18n="project1Text">
                   Landing page desenvolvida para um salão de beleza, com foco em identidade visual elegante,
                   apresentação estratégica dos serviços e fortalecimento da presença digital da marca.
                 </p>
@@ -324,7 +330,7 @@
       
                 <div class="project-actions">
                   <a href="https://studio-beauty-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                    Ver site
+                    <span data-i18n="projectViewSite">Ver site</span>
                   </a>
                 </div>
               </div>
@@ -336,9 +342,9 @@
               </a>
       
               <div class="project-content">
-                <span class="project-tag">Site Institucional</span>
-                <h3>Nactel Construções</h3>
-                <p>
+                <span class="project-tag" data-i18n="project2Tag">Site Institucional</span>
+                <h3 data-i18n="project2Title">Nactel Construções</h3>
+                <p data-i18n="project2Text">
                   Site institucional criado para transmitir credibilidade, apresentar os serviços da empresa
                   com clareza e reforçar uma imagem sólida no segmento da construção civil.
                 </p>
@@ -351,7 +357,7 @@
       
                 <div class="project-actions">
                   <a href="https://site-nactel.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                    Ver site
+                    <span data-i18n="projectViewSite">Ver site</span>
                   </a>
                 </div>
               </div>
@@ -363,9 +369,9 @@
               </a>
       
               <div class="project-content">
-                <span class="project-tag">Portfólio Profissional</span>
-                <h3>Wesley | Portfólio</h3>
-                <p>
+                <span class="project-tag" data-i18n="project3Tag">Portfólio Profissional</span>
+                <h3 data-i18n="project3Title">Wesley | Portfólio</h3>
+                <p data-i18n="project3Text">
                   Portfólio autoral desenvolvido para apresentar projetos, competências e identidade visual
                   com uma interface moderna, objetiva e pensada para transmitir profissionalismo.
                 </p>
@@ -378,7 +384,7 @@
       
                 <div class="project-actions">
                   <a href="https://my-portfolio-green-three-25.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                    Ver site
+                    <span data-i18n="projectViewSite">Ver site</span>
                   </a>
                 </div>
               </div>
@@ -390,9 +396,9 @@
               </a>
       
               <div class="project-content">
-                <span class="project-tag">Landing Page</span>
-                <h3>Odonto Prime</h3>
-                <p>
+                <span class="project-tag" data-i18n="project4Tag">Landing Page</span>
+                <h3 data-i18n="project4Title">Odonto Prime</h3>
+                <p data-i18n="project4Text">
                   Landing page desenvolvida para uma clínica odontológica, com foco em confiança,
                   apresentação dos serviços e incentivo ao contato e agendamento de pacientes.
                 </p>
@@ -405,7 +411,7 @@
       
                 <div class="project-actions">
                   <a href="https://odonto-prime-bice.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                    Ver site
+                    <span data-i18n="projectViewSite">Ver site</span>
                   </a>
                 </div>
               </div>
@@ -417,9 +423,9 @@
               </a>
       
               <div class="project-content">
-                <span class="project-tag">Landing Page</span>
-                <h3>Lidiane Barreto</h3>
-                <p>
+                <span class="project-tag" data-i18n="project5Tag">Landing Page</span>
+                <h3 data-i18n="project5Title">Lidiane Barreto</h3>
+                <p data-i18n="project5Text">
                   Landing page criada para uma terapeuta, com comunicação acolhedora, visual leve
                   e estrutura pensada para valorizar os atendimentos e fortalecer a conexão com o público.
                 </p>
@@ -432,7 +438,7 @@
       
                 <div class="project-actions">
                   <a href="https://site-lidiane.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                    Ver site
+                    <span data-i18n="projectViewSite">Ver site</span>
                   </a>
                 </div>
               </div>
@@ -444,9 +450,9 @@
               </a>
       
               <div class="project-content">
-                <span class="project-tag">Landing Page</span>
-                <h3>Brasa Nobre</h3>
-                <p>
+                <span class="project-tag" data-i18n="project6Tag">Landing Page</span>
+                <h3 data-i18n="project6Title">Brasa Nobre</h3>
+                <p data-i18n="project6Text">
                   Site desenvolvido para um restaurante com proposta visual premium, navegação fluida
                   e estrutura pensada para destacar cardápio, ambiente e reservas via WhatsApp.
                 </p>
@@ -459,7 +465,7 @@
       
                 <div class="project-actions">
                   <a href="https://brasa-nobre-delta.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                    Ver site
+                    <span data-i18n="projectViewSite">Ver site</span>
                   </a>
                 </div>
               </div>
@@ -471,9 +477,9 @@
               </a>
       
               <div class="project-content">
-                <span class="project-tag">Dashboard</span>
-                <h3>Fin Vault</h3>
-                <p>
+                <span class="project-tag" data-i18n="project7Tag">Dashboard</span>
+                <h3 data-i18n="project7Title">Fin Vault</h3>
+                <p data-i18n="project7Text">
                   Dashboard financeiro interativo com Flask, JavaScript e
                   visual responsivo para acompanhamento de carteira e indicadores de mercado.
                 </p>
@@ -488,7 +494,7 @@
       
                 <div class="project-actions">
                   <a href="https://dashboard-fin-vault.vercel.app/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                    Ver site
+                    <span data-i18n="projectViewSite">Ver site</span>
                   </a>
                 </div>
               </div>
@@ -500,14 +506,14 @@
       <section class="section section-muted" id="skills">
         <div class="container skills-grid">
           <div class="skills-copy reveal">
-            <p class="eyebrow">Habilidades</p>
-            <h2>Tecnologias e capacidades</h2>
+            <p class="eyebrow" data-i18n="skillsEyebrow">Habilidades</p>
+            <h2 data-i18n="skillsTitle">Tecnologias e capacidades</h2>
             
 
             <div class="skill-bars">
               <div class="skill-bar">
                 <div class="skill-header">
-                  <span>HTML5</span>
+                  <span data-i18n="skill1Label">HTML5</span>
                   <span>95%</span>
                 </div>
                 <div class="progress"><span style="width: 95%"></span></div>
@@ -523,7 +529,7 @@
 
               <div class="skill-bar">
                 <div class="skill-header">
-                  <span>CSS Moderno</span>
+                  <span data-i18n="skill3Label">CSS Moderno</span>
                   <span>90%</span>
                 </div>
                 <div class="progress"><span style="width: 90%"></span></div>
@@ -540,18 +546,18 @@
           </div>
 
           <div class="stack-cloud reveal">
-            <span class="chip">HTML5</span>
-            <span class="chip">CSS3</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">Python</span>
-            <span class="chip">React</span>
-            <span class="chip">TypeScript</span>
-            <span class="chip">UI&UX</span>
-            <span class="chip">Acessibilidade</span>
-            <span class="chip">Git</span>
-            <span class="chip">Vercel</span>
-            <span class="chip">Landing Pages</span>
-            <span class="chip">Sites corporativos</span>
+            <span class="chip" data-i18n="chip1">HTML5</span>
+            <span class="chip" data-i18n="chip2">CSS3</span>
+            <span class="chip" data-i18n="chip3">JavaScript</span>
+            <span class="chip" data-i18n="chip4">Python</span>
+            <span class="chip" data-i18n="chip5">React</span>
+            <span class="chip" data-i18n="chip6">TypeScript</span>
+            <span class="chip" data-i18n="chip7">UI&UX</span>
+            <span class="chip" data-i18n="chip8">Acessibilidade</span>
+            <span class="chip" data-i18n="chip9">Git</span>
+            <span class="chip" data-i18n="chip10">Vercel</span>
+            <span class="chip" data-i18n="chip11">Landing Pages</span>
+            <span class="chip" data-i18n="chip12">Sites corporativos</span>
           </div>
         </div>
       </section>
@@ -559,9 +565,9 @@
       <section class="section" id="processo">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">Processo</p>
-            <h2>Uma forma de trabalho clara e profissional</h2>
-            <p>
+            <p class="eyebrow" data-i18n="processEyebrow">Processo</p>
+            <h2 data-i18n="processTitle">Uma forma de trabalho clara e profissional</h2>
+            <p data-i18n="processLead">
               Aqui tem o processo do projeto do site
             </p>
           </div>
@@ -569,23 +575,23 @@
           <div class="process-grid">
             <article class="process-card reveal">
               <span>01</span>
-              <h3>Briefing</h3>
-              <p>Entendimento do objetivo, público, linguagem visual e resultado esperado.</p>
+              <h3 data-i18n="process1Title">Briefing</h3>
+              <p data-i18n="process1Text">Entendimento do objetivo, público, linguagem visual e resultado esperado.</p>
             </article>
             <article class="process-card reveal">
               <span>02</span>
-              <h3>Estrutura</h3>
-              <p>Organização das seções, hierarquia de conteúdo e direção estética do projeto.</p>
+              <h3 data-i18n="process2Title">Estrutura</h3>
+              <p data-i18n="process2Text">Organização das seções, hierarquia de conteúdo e direção estética do projeto.</p>
             </article>
             <article class="process-card reveal">
               <span>03</span>
-              <h3>Desenvolvimento</h3>
-              <p>Construção da interface com código limpo, atenção ao detalhe e boa performance.</p>
+              <h3 data-i18n="process3Title">Desenvolvimento</h3>
+              <p data-i18n="process3Text">Construção da interface com código limpo, atenção ao detalhe e boa performance.</p>
             </article>
             <article class="process-card reveal">
               <span>04</span>
-              <h3>Entrega</h3>
-              <p>Refinamento final, revisão visual e preparação para publicação online.</p>
+              <h3 data-i18n="process4Title">Entrega</h3>
+              <p data-i18n="process4Text">Refinamento final, revisão visual e preparação para publicação online.</p>
             </article>
           </div>
         </div>
@@ -594,12 +600,12 @@
       <section class="section section-accent" id="contato">
         <div class="container contact-grid">
           <div class="contact-copy reveal">
-            <p class="eyebrow">Contato</p>
-            <h2>Vamos transformar sua presença digital em algo marcante</h2>
+            <p class="eyebrow" data-i18n="contactEyebrow">Contato</p>
+            <h2 data-i18n="contactTitle">Vamos transformar sua presença digital em algo marcante</h2>
             
             <div class="contact-info">
               <div>
-                <span>WhatsApp</span>
+                <span data-i18n="contactWhatsapp">WhatsApp</span>
                 <strong>
                   <a href="https://wa.me/81999630813" target="_blank">
                     <img src="./img/zap.svg" width="25" alt="WhatsApp">
@@ -608,7 +614,7 @@
                 </strong>
               </div>
               <div>
-                <span>LinkedIn</span>
+                <span data-i18n="contactLinkedin">LinkedIn</span>
                 <strong>
                   <a href="https://www.linkedin.com/in/wesley-albuquerque-7272892b7/" target="_blank" alt="Linkedin">
                     <img src="/img/linkedin.svg" width="25">
@@ -616,7 +622,7 @@
                 </strong>
               </div>
               <div>
-                <span>GitHub</span>
+                <span data-i18n="contactGithub">GitHub</span>
                 <strong>
                   <a href="https://github.com/wesleyyach" target="_blank" alt="Github">
                     <img src="/img/github.svg" width="25">
@@ -628,26 +634,28 @@
 
           <form class="contact-form reveal" id="contactForm">
             <div class="field-group">
-              <label for="name">Seu nome</label>
-              <input type="text" id="name" name="name" placeholder="Digite seu nome" required />
+              <label for="name" data-i18n="formNameLabel">Seu nome</label>
+              <input type="text" id="name" name="name" placeholder="Digite seu nome" data-i18n-placeholder="formNamePlaceholder" required />
             </div>
 
             <div class="field-group">
-              <label for="email">Seu e-mail</label>
-              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+              <label for="email" data-i18n="formEmailLabel">Seu e-mail</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" data-i18n-placeholder="formEmailPlaceholder" required />
             </div>
 
             <div class="field-group">
-              <label for="subject">Assunto</label>
-              <input type="text" id="subject" name="subject" placeholder="Ex: Projeto de site profissional" required />
+              <label for="subject" data-i18n="formSubjectLabel">Assunto</label>
+              <input type="text" id="subject" name="subject" placeholder="Ex: Projeto de site profissional" data-i18n-placeholder="formSubjectPlaceholder" required />
             </div>
 
             <div class="field-group">
-              <label for="message">Mensagem</label>
-              <textarea id="message" name="message" rows="5" placeholder="Conte um pouco sobre o que você precisa" required></textarea>
+              <label for="message" data-i18n="formMessageLabel">Mensagem</label>
+              <textarea id="message" name="message" rows="5" placeholder="Conte um pouco sobre o que você precisa" data-i18n-placeholder="formMessagePlaceholder" required></textarea>
             </div>
 
-            <button class="btn btn-primary btn-full" type="submit">Enviar mensagem</button>
+            <button class="btn btn-primary btn-full" type="submit" data-i18n="formSubmit">Enviar mensagem</button>
+
+            <p class="form-note" id="formNote"></p>
 
           </form>
         </div>
@@ -656,8 +664,8 @@
 
     <footer class="footer">
       <div class="container footer-inner">
-        <p>© <span id="currentYear"></span> Wesley de Albuquerque. Todos os direitos reservados.</p>
-        <a href="#home" class="back-top">Voltar ao topo</a>
+        <p data-i18n-html="footerText">© <span id="currentYear"></span> Wesley de Albuquerque. Todos os direitos reservados.</p>
+        <a href="#home" class="back-top" data-i18n="backToTop">Voltar ao topo</a>
       </div>
     </footer>
 
