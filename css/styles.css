@@ -236,14 +236,12 @@ button {
   letter-spacing: 0.12em;
 }
 
-.logo span {
-  display: inline-grid;
-  place-items: center;
+.logo-mark {
+  display: block;
   width: 42px;
   height: 42px;
   border-radius: 14px;
-  background: linear-gradient(135deg, var(--primary-strong), var(--secondary));
-  color: #fff;
+  object-fit: cover;
   box-shadow: var(--shadow);
 }
 
@@ -469,14 +467,18 @@ button {
 }
 
 .profile-avatar {
-  display: grid;
-  place-items: center;
   width: 74px;
   height: 74px;
   border-radius: 22px;
-  font-weight: 700;
-  background: linear-gradient(135deg, rgba(99, 231, 255, 0.18), rgba(139, 92, 246, 0.22));
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 18px 40px rgba(34, 87, 255, 0.18);
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .profile-lines {
